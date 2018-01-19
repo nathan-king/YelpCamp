@@ -12,6 +12,12 @@ body {
 #landing-header h1 {
     color: #fff;
     text-shadow: -.05rem 0 black, 0 .05rem black, .05rem 0 black, 0 .05rem black;
+    font-size: 6rem;
+}
+
+.btn-custom {
+  background-color: #488aad;
+  color: #fff;
 }
 
 .slideshow { 
