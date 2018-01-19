@@ -13,7 +13,7 @@
             <h3>Our Most Popular Campgrounds</h3>
         </div>
     <% campgrounds.forEach(function (campground){ %>
-        <div class="col-md-3 col-sm-6" style="display:flex; flex-wrap: wrap;"></div>
+        <div class="col-md-3 col-sm-6" style="display:flex; flex-wrap: wrap;">
             <a class="clickable" href="/campgrounds/<%= campground._id %>">    
             <div class="thumbnail" id="thumbnail-main">
                     <img src="<%= campground.image %>">
