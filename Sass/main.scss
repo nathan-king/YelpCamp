@@ -1,0 +1,32 @@
+header {
+    text-align: center;
+}
+
+h3 {
+    line-height: 2em;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail {
+    padding: 0;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+}
+
+.delete-form {
+    display: inline;
+}
+
+.form-header {
+    text-align: center;
+}
+
+.form-div {
+    width: 30%; margin: 25px auto;
+}
