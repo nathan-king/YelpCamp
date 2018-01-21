@@ -2,16 +2,22 @@
 <html>
     <head>
         <title>YelpCamp</title>
+        <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
         <link rel="stylesheet" href="/stylesheets/main.css"
     </head>
     <body>
-        <nav class="navbar navbar-custom">
+        <nav class="navbar navbar-fixed-top navbar-custom">
             <div class="container-fluid">
                 <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
                     <a class="navbar-brand" href="/">YelpCamp</a>
                 </div>
-                <div class="collapse navbar-collapse">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li><a href="/campgrounds">Home</a></li>
                     </ul>
