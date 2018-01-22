@@ -10,7 +10,13 @@ body {
 
 .navbar i {
     color: #fff;
+    font-size: 1.25em;
 }
+
+.navbar  i:hover {
+    color: #cdcdcd;
+}
+
 .navbar-brand {
     color: #fff;
 }
@@ -21,6 +27,9 @@ body {
 
 .nav a {
     color: #fff;
+}
+.nav a:hover {
+    color: #cdcdcd;
 }
 
 .nav>li>a:hover {
@@ -65,14 +74,19 @@ h3 {
     text-decoration: none;
 }
 
+#camp-center {
+    margin: auto 0;
+}
+
 #index-grid {
     display:flex; 
     flex-wrap: wrap;
 }
 
-.thumbnail img {
-    width: 100%;
+#camp-img {
     border-radius: .5rem .5rem 0 0;
+    height: 65%;
+    width: 300px;
 }
 
 .thumbnail {
@@ -85,6 +99,8 @@ h3 {
     box-shadow: 0 .3rem .6rem rgba(0, 0, 0, .2);
     transition: .2s;
     background-color: #e9e7e7;
+    height: 300px;
+    max-width: 300px;
 }
 
 #thumbnail-main:hover {
