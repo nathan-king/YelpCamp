@@ -6,7 +6,6 @@ body {
 
 .navbar-custom {
     background-color: #0d5c86;
-    height: 2px;
 }
 
 .navbar i {
@@ -40,11 +39,11 @@ header {
     text-align: center;
 }
 
-h1 {
+#index-heading {
     animation: moveInLeft 1s ease-out;
 }
 
-h1 + p {
+#index-heading + p {
     animation: moveInRight 1s ease-out;
 }
 
