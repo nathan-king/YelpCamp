@@ -1,11 +1,12 @@
 body {
     background-color: #e9e9e9;
     color: #084566;
-    padding-top: 15vh;
+    padding-top: 14vh;
 }
 
 .navbar-custom {
     background-color: #0d5c86;
+    height: 2px;
 }
 
 .navbar i {
@@ -87,6 +88,9 @@ h3 {
 
 #camp-center {
     margin: auto 0;
+    opacity: 0;
+    animation: becomeVisible .25s ease-in .5s;
+    animation-fill-mode: forwards;
 }
 
 #index-grid {
@@ -219,5 +223,16 @@ footer {
     100% {
         opacity: 1;
         transform: translate(0);
+    }
+}
+
+@keyframes becomeVisible {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    100% {
+        opacity: 1;
     }
 }
