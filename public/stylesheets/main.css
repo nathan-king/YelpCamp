@@ -100,7 +100,6 @@ h3 {
 #camp-img {
     border-radius: .5rem .5rem 0 0;
     height: 65%;
-    width: 300px;
     width: 100%;
 }
 
@@ -122,6 +121,7 @@ h3 {
     background-color: #e9e7e7;
     height: 300px;
     margin: 0 5% 5% 5%;
+    max-width: 350px;
 }
 
 #thumbnail-main:hover {
