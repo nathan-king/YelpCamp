@@ -101,6 +101,7 @@ h3 {
     border-radius: .5rem .5rem 0 0;
     height: 65%;
     width: 300px;
+    width: 100%;
 }
 
 #show-img {
@@ -120,8 +121,7 @@ h3 {
     transition: .2s;
     background-color: #e9e7e7;
     height: 300px;
-    max-width: 300px;
-    
+    margin: 0 5% 5% 5%;
 }
 
 #thumbnail-main:hover {
@@ -233,5 +233,14 @@ footer {
 
     100% {
         opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    #thumbnail {
+        width: 300px;
+    }
+    #thumbnail-main {
+        margin: auto;
     }
 }
