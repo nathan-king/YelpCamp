@@ -1,22 +1,148 @@
+$color-primary: rgb(60, 158, 60);
+$color-primary-light: lighten($color-primary, 20%);
+$color-primary-dark: darken($color-primary, 20%);
+
+$color-secondary: rgb(122, 211, 87);
+
+$color-tertiary: rgb(219, 68, 101);
+$color-tertiary-dark: darken($color-tertiary, 20%);
+
+$color-white: rgb(247, 252, 207);
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    background-color: $color-white;
+    color: #000;
+    padding-top: 14vh;
+}
+
+.navbar-custom {
+    background-color: $color-primary;
+}
+
+.navbar i {
+    color: #fff;
+}
+
+.navbar-brand {
+    color: #fff;
+}
+
+.navbar-brand:hover {
+    color: #cdcdcd;
+}
+
+.nav a {
+    color: #fff;
+}
+.nav a:hover {
+    color: #cdcdcd;
+}
+
+.nav>li>a:hover {
+    background-color: $color-secondary;
+    color: #000;
+}
+
 header {
     text-align: center;
+}
+
+#index-heading {
+    animation: moveInLeft 1s ease-out;
+}
+
+#index-heading + p {
+    animation: moveInRight 1s ease-out;
 }
 
 h3 {
     line-height: 2em;
 }
 
-.thumbnail img {
+.btn-xs {
+    height: 20px;
+}
+
+.btn-custom {
+    background-color: $color-tertiary;
+    color: #fff;
+}
+
+.btn-custom:hover {
+    background-color: $color-tertiary-dark;
+    color: #fff;
+
+}
+
+
+.btn {
+    box-shadow: 0 .25rem .5rem rgba(0, 0, 0, .2);
+    transition: .2s;
+}
+
+.btn:hover {
+    transform: translateY(1px);
+    box-shadow: 0 .12rem .25rem rgba(0, 0, 0, .2);
+}
+
+.title {
+    height: 10rem;
+}
+
+.clickable:hover {
+    text-decoration: none;
+}
+
+#camp-center {
+    margin: auto 0;
+    opacity: 0;
+    animation: becomeVisible .25s ease-in .5s;
+    animation-fill-mode: forwards;
+}
+
+#index-grid {
+    display:flex; 
+    flex-wrap: wrap;
+}
+
+#camp-img {
+    border-radius: .5rem .5rem 0 0;
+    height: 65%;
     width: 100%;
+}
+
+#show-img {
+    border-radius: .5rem .5rem 0 0;
+    width: 100%;
+    max-height: 500px;
 }
 
 .thumbnail {
     padding: 0;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    border-radius: .5rem;
 }
 
-.thumbnail .caption-full {
-    padding: 9px;
+#thumbnail-main{
+    box-shadow: 0 .3rem .6rem rgba(0, 0, 0, .2);
+    transition: .2s;
+    background-color: $color-white;
+    height: 300px;
+    margin: 0 5% 5% 5%;
+    max-width: 350px;
+}
+
+#thumbnail-main:hover {
+    box-shadow: 0 .12rem .3rem rgba(0, 0, 0, .2);
+    transform: translateY(3px);
+}
+
+.caption-full {
+    padding: 20px;
 }
 
 .delete-form {
@@ -28,5 +154,109 @@ h3 {
 }
 
 .form-div {
-    width: 30%; margin: 25px auto;
+    max-width: 30%;
+    min-width: 400px; 
+    margin: 25px auto;
+}
+
+.form-container {
+    min-height: 75vh;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+.well {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+}
+
+.jumbotron {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    background-image: linear-gradient(to right bottom, rgba($color-primary, .2), rgba($color-primary-dark, .2)), url("assets/maria-chantal-rodriguez-nilsson-174086.jpg");
+    background-size: cover;
+    background-position: center;
+    /* background-color: #cdcdcd; */
+    color: #fff;
+}
+
+/* .comment {
+    margin-top: 0;
+    background-color: #e9e9e9;
+} */
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(72, 138, 173, 0.25), rgba(72, 138, 173, 0.3), rgba(72, 138, 173, 0.15), rgba(0, 0, 0, 0));
+}
+
+.edit-image {
+    width: 100%;
+}
+
+h3 {
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: .9em;
+    font-weight: 200;
+  }
+
+
+  @keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80% {
+        transform: translateX(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    80% {
+        transform: translateX(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes becomeVisible {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 300px) {
+    #thumbnail {
+        width: 300px;
+    }
+    #thumbnail-main {
+        margin: 10px auto;
+    }
 }
