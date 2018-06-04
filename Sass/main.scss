@@ -1,13 +1,13 @@
-$color-primary: rgb(60, 158, 60);
+$color-primary: #505160;
 $color-primary-light: lighten($color-primary, 20%);
 $color-primary-dark: darken($color-primary, 20%);
 
-$color-secondary: rgb(122, 211, 87);
+$color-secondary: #aebd38;
 
-$color-tertiary: rgb(219, 68, 101);
+$color-tertiary: #68829e;
 $color-tertiary-dark: darken($color-tertiary, 20%);
 
-$color-white: rgb(247, 252, 207);
+$color-white: lighten($color-secondary, 50%);
 
 html {
     min-height: 100vh;
@@ -51,8 +51,8 @@ body {
 }
 
 .nav>li>a:hover {
-    background-color: $color-secondary;
-    color: #000;
+    background-color: $color-primary-dark;
+    color: $color-tertiary;
 }
 
 header {

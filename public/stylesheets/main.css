@@ -3,7 +3,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: #f7fccf;
+  background-color: #fcfdf7;
   color: #000;
   padding-top: 14vh;
   font-size: 1.4rem; }
@@ -11,10 +11,10 @@ body {
 #not-link:hover {
   color: #fff;
   cursor: text;
-  background: #3c9e3c; }
+  background: #505160; }
 
 .navbar-custom {
-  background-color: #3c9e3c; }
+  background-color: #505160; }
 
 .navbar i {
   color: #fff; }
@@ -32,8 +32,8 @@ body {
   color: #cdcdcd; }
 
 .nav > li > a:hover {
-  background-color: #7ad357;
-  color: #000; }
+  background-color: #222228;
+  color: #68829e; }
 
 header {
   text-align: center; }
@@ -51,11 +51,11 @@ h3 {
   height: 20px; }
 
 .btn-custom {
-  background-color: #db4465;
+  background-color: #68829e;
   color: #fff; }
 
 .btn-custom:hover {
-  background-color: #9b1e39;
+  background-color: #3f4f61;
   color: #fff; }
 
 .btn {
@@ -100,7 +100,7 @@ h3 {
 #thumbnail-main {
   box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.2);
   transition: .2s;
-  background-color: #f7fccf;
+  background-color: #fcfdf7;
   height: 300px;
   margin: 0 5% 5% 5%;
   max-width: 350px; }
@@ -134,7 +134,7 @@ textarea {
 
 .jumbotron {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-  background-image: linear-gradient(to right bottom, rgba(60, 158, 60, 0.2), rgba(32, 84, 32, 0.2)), url("assets/maria-chantal-rodriguez-nilsson-174086.jpg");
+  background-image: linear-gradient(to right bottom, rgba(80, 81, 96, 0.2), rgba(34, 34, 40, 0.2)), url("assets/maria-chantal-rodriguez-nilsson-174086.jpg");
   background-size: cover;
   background-position: center;
   /* background-color: #cdcdcd; */
