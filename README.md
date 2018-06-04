@@ -1,10 +1,10 @@
 # YelpCamp
 
-A Node.js application with RESTful routing utilising Bootstrap -- from The Web Developer's Bootcamp by Colt Steele.
+A Node.js application with RESTful routing -- from The Web Developer's Bootcamp by Colt Steele.
 
 ## Features
 
-* Responsive web design utilising **Bootstrap**
+* Responsive web design utilising **Bootstrap** and **Sass**
 * Flash messages that respond to user input using **connect-flash**
 * Manage camgrounds and comments (create, edit and delete)
 * Authentication (admin and user registration and login) utilising **passport.js**
@@ -27,6 +27,10 @@ A Node.js application with RESTful routing utilising Bootstrap -- from The Web D
 #### Install Dependencies 
 
 > npm install
+
+#### Run Live Sass Compiling
+
+> npm run compile:sass
 
 ### Deployed Demo
 
