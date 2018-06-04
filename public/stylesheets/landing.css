@@ -6,17 +6,18 @@ body {
     z-index: 1;
     position: relative;
     text-align: center;
-    padding-top: 40vh;
+    padding-top: 35vh;
 }
 
 #landing-header h1 {
     color: #fff;
     text-shadow: -.05rem 0 black, 0 .05rem black, .05rem 0 black, 0 .05rem black;
     font-size: 6rem;
+    padding-bottom: 50px;
 }
 
 .btn-custom {
-  background-color: #488aad;
+  background-color: rgb(60, 158, 60);
   color: #fff;
 }
 
